@@ -6,3 +6,7 @@ h1
 {
     text-color: darkgray;
 }
+.game
+{
+    display: none;
+}
