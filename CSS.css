@@ -1,6 +1,7 @@
 body
 {
     font-family: 'Corben', Georgia, Times, Sans-Serif;
+    background: -webkit-radial-gradient(lightgray, gray);
 }
 h1
 {
