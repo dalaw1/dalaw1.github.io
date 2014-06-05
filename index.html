@@ -3,28 +3,62 @@
     <title>Ican Construct 2 Hub</title>
     <link rel="icon" type="image/jpg" href="Favicon.ico">
     <link rel="stylesheet" type="text/css" href="CSS.css">
+    <script type="text/javascript" src="JS.js"></script>
 </head>
 <body>
 <div class="tabcontainer">
-    <div class="tab specialtab">Featured Games</div>
-    <div class="tab"><span id="bold"><b>Home</b></span></div>
-    <div class="tab">Antony's Game</div>
-    <div class="tab">Casey's Game</div>
-    <div class="tab">Eduardo's Game</div>
-    <div class="tab">Jeremy L's Game</div>
-    <div class="tab">Jeremy P's Game</div>
-    <div class="tab">Julian's Game</div>
-    <div class="tab">Luca's Game</div>
-    <div class="tab">Nicholas' Game</div>
-    <div class="tab">Philippe's Game</div>
-    <div class="tab">Steven's Game</div>
-    <div class="tab">Tristan's Game</div>
+    <div class="tab specialtab" id="tfg">Featured Games</div>
+    <div class="tab" id="thome"><span id="bold"><b>Home</b></span></div>
+        <div class="tab" id="other">Games
+            <div class="subtabcontainer">
+                <div class="tab subtab" id="ta">Antony's Game</div>
+                <div class="tab subtab" id="tc">Casey's Game</div>
+                <div class="tab subtab" id="te">Eduardo's Game</div>
+                <div class="tab subtab" id="tjl">Jeremy L's Game</div>
+                <div class="tab subtab" id="tjp">Jeremy P's Game</div>
+                <div class="tab subtab" id="tj">Julian's Game</div>
+                <div class="tab subtab" id="tl">Luca's Game</div>
+                <div class="tab subtab" id="tn">Nicholas' Game</div>
+                <div class="tab subtab" id="tp">Philippe's Game</div>
+                <div class="tab subtab" id="ts">Steven's Game</div>
+                <div class="tab subtab" id="tt">Tristan's Game</div>
+            </div>
+    </div>
+
 </div>
 <div class="pagecontainer">
-    <div id="home">
+    <div class="page" id="home">
         <h1>The Hub for The ICan Construct 2 Projects</h1>
-        <p>Hey! This Website's purpose is to have an online website with a collection of the ICan Construct 2 Projects.
-        <br/>The Three Featured Games are James', Charles' and <abbr title="Matthew">Mine</abbr>.</p>
+        <h3><span id="name"></span></h3>
+        <p>This Website's purpose is to have an online website with a collection of the ICan Construct 2 Projects.
+        <br/>
+        The Three Featured Games are James', Charles' and <abbr title="Matthew">Mine</abbr>.</p>
+        <div class="inputcontainer">
+
+            <input type="text" value="John Doe" class="textbox" id="textbox" autofocus="true"/>
+            <label for="textbox">Name: </label>
+            <br/>
+            <button type="button" id="button">Update Name</button>
+        </div>
+
+    </div>
+    <div class="page" id="fg">
+
+    </div>
+    <div class="page" id="a">
+
+    </div>
+    <div class="page" id="c">
+
+    </div>
+    <div class="page" id="e">
+
+    </div>
+    <div class="page" id="jl">
+
+    </div>
+    <div class="page" id="jp">
+
     </div>
 </div>
 

@@ -11,7 +11,7 @@ body {
 h1 {
     color: black
 }
-#home {
+.page {
     display: block;
     height: 100%;
 }
@@ -23,13 +23,45 @@ h1 {
     background: linear-gradient(245deg, lightcoral, red);
 }
 .tab {
-    height: 25px;
-    width: 7.5%;
+    height: 35px;
+    width: 33%;
     float: left;
-    font-size: 14px;
-    border: 1px solid black ;
+    font-size: 13px;
+    border: 1px solid black;
+    text-align: center;
+}
+.subtab {
+    width: 32%;
+/*    display: none; */
+    opacity: 0.0;
+    -webkit-transition: opacity 0.5s;
 }
 #bold {
     font-size: 16px;
-    margin-left: 25%;
+    margin-top: 50%;
+}
+#ta, #tc, #te {
+    margin-top: 18px;
+}
+#ts {
+    margin-left:15%;
+}
+.tabcontainer .tab > .subtab {
+    display: block;
+    width: 32%;
+}
+.tabcontainer .tab:hover .subtabcontainer > .subtab ,
+.tabcontainer .tab .subtabcontainer:hover > .subtab ,
+.tabcontainer .tab .subtabcontainer > .subtab:hover {
+    display: block;
+    opacity: 1.0;
+}
+input, label {
+    float: right;
+}
+button {
+    float: right;
+}
+.name {
+    font-size: 20px;
 }
