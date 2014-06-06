@@ -9,6 +9,9 @@ window.onload = function() {
     var cookie = null;
     var button = document.getElementById('button');
 
+    var gamecontainer = document.getElementById('gamecontainer');
+    var currentframe = 0;
+
     if (document.cookie) {
         name.innerHTML = "Hey " + document.cookie + "! ";
     }
@@ -26,4 +29,27 @@ window.onload = function() {
         saveCookie();
         name.innerHTML = "Hey " + cookie + "! ";
     });
+
+    $(document).keydown( function (e) {
+        if (e.keyCode == 37)
+            SlideLeft();
+        else if (e.keyCode == 39)
+            SlideRight();
+    });
+    function SlideLeft()
+    {
+        if (currentframe > 0) {
+            $("#gamecontainer").animate({"margin-left": "+=500px"});
+            currentframe--;
+        }
+    }
+    function SlideRight()
+    {
+        if (currentframe < 2) {
+            $("#gamecontainer").animate({"margin-left": "-=500px"});
+            currentframe++;
+        }
+
+    }
 };
+

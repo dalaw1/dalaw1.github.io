@@ -15,6 +15,12 @@ h1 {
     display: block;
     height: 100%;
 }
+#home {
+    display: none;
+}
+#fg {
+
+}
 .tabcontainer {
     height: 28px;
     width: 100%;
@@ -32,7 +38,7 @@ h1 {
 }
 .subtab {
     width: 32%;
-/*    display: none; */
+
     opacity: 0.0;
     -webkit-transition: opacity 0.5s;
 }
@@ -46,8 +52,10 @@ h1 {
 #ts {
     margin-left:15%;
 }
-.tabcontainer .tab > .subtab {
+.tabcontainer .tab .subtabcontainer > .subtab {
     display: block;
+    opacity: 0.0;
+    -webkit-transition: opacity 0.5s;
     width: 32%;
 }
 .tabcontainer .tab:hover .subtabcontainer > .subtab ,
@@ -55,6 +63,10 @@ h1 {
 .tabcontainer .tab .subtabcontainer > .subtab:hover {
     display: block;
     opacity: 1.0;
+    -webkit-transition: opacity 0.5s
+}
+.subtabcontainer, .subtab {
+    display: block;
 }
 input, label {
     float: right;
@@ -64,4 +76,37 @@ button {
 }
 .name {
     font-size: 20px;
+}
+#box
+{
+    margin: auto;
+    height: 500px;
+    width: 500px;
+    border: 1px black dashed;
+    overflow: hidden;
+    margin-top: 25px;
+}
+#gamecontainer
+{
+    width: 1500px;
+    height: 500px;
+    float: left;
+    background: #525252;
+    margin-left: 0px;
+}
+.frame
+{
+    margin: 9px;
+    width: 480px;
+    height: 480px;
+    background: white;
+    border: 1px solid black;
+    float: left;
+}
+.gamename {
+    text-align: center;
+}
+iframe {
+    height: 480px;
+    width: 480px;
 }
