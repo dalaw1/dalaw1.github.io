@@ -8,10 +8,10 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    -webkit-transition: background 1.0s
+    -webkit-transition: background 10.0s
 }
 .page {
-    display: block;
+    display: none;
     height: 100%;]
     text-align: center;
 }
@@ -63,7 +63,7 @@ body {
 
 /* For Home Page */
 #home {
-    /*display: block;*/
+    display: block;
 }
 .name {
     font-size: 20px;

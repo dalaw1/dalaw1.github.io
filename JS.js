@@ -54,4 +54,20 @@ window.onload = function() {
         }
 
     }
+
+    // Make Tabs Work
+    $('#thome').click(function () {
+        $('.page').hide();
+        $('iframe').attr('src', "");
+        $('#home').show();
+        $('.tab').css("background", "");
+        $(this).css("background", "#717171");
+    });
+    $('#tfg').click(function () {
+        $('.page').hide();
+        $('iframe').attr('src', "");
+        $('#fg').show();
+        $('.tab').css("background", "");
+        $(this).css("background", "radial-gradient(at top right, gray, #717171) no-repeat center center fixed");
+    });
 };
